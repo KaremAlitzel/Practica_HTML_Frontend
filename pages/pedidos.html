@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cake Colors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/productos.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/forms.css" />
+    <link rel="shortcut icon" href="../media/favicon.png">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="cabecera">
+        <nav>
+            <div class="nav_logo">
+                <h2 class="nav_logo">Cake Colors</h2>
+            </div>
+            <ul class="nav_vinculos">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="adornos.html">Adornos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+
+    <section class="contenido">
+        <h1>Haga su pedido.</h1>
+        <hr>
+        <form class="pedido" action="">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <br>
+            <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="Teléfono">
+            <br>
+            <input type="email" id="email" name="email" placeholder="E-Mail">
+            <br>
+            <input type="text" id="direccion" name="direccion" placeholder="Direccion">
+            <br>
+            <textarea type="text" id="detalles" name="detalles" placeholder="Detalles del pedido"></textarea>
+            <br>
+            <h2>Sabores.</h2>
+            <ul class="checkbox">
+                <li>
+                    <input type="checkbox" id="sabor-chocolate" name="sabor-chocolate">
+                    <label for="sabor-chocolate">Chocolate</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sabor-moka" name="sabor-moka">
+                    <label for="sabor-moka">Moka</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sabor-tresleches" name="sabor-tresleches">
+                <label for="sabor-tresleches">Tres Leches</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sabor-cheesecake" name="sabor-cheesecake">
+                <label for="sabor-cheesecake">Cheesecake</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sabor-tiramisu" name="sabor-tiramisu">
+                <label for="sabor-tiramisu">Tiramisú</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sabor-fresa" name="sabor-fresa">
+                <label for="sabor-fresa">Fresa</label>
+                </li>
+            </ul>
+            <br>
+            <h2>Adornos.</h2>
+            <ul class="checkbox">
+                <li>
+                    <input type="checkbox" id="adorno-cumpleanos" name="adorno-cumpleanos">
+                    <label for="adorno-cumpleanos">Adornos de cumpleaños</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="adorno-nupcial" name="adorno-personalizado">
+                    <label for="adorno-nupcial">Adornos nupciales</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="adorno-personalizado" name="adorno-personalizado">
+                    <label for="adorno-personalizado">Adornos personalizados</label>
+                </li>
+            </ul>
+            <textarea type="text" id="adorno-personalizado-descripcion" name="adorno-personalizado-descripcion" placeholder="Si el adrono es personalizado. Descríbalo a continuación."></textarea>
+            <div style="display: flex;justify-content: center;">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

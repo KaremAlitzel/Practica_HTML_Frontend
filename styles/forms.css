@@ -1,0 +1,58 @@
+form {
+  width: 100%;
+}
+
+form input:not([type="checkbox"]),
+textarea {
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+
+  transition: all 0.3s ease;
+
+  background-color: white;
+  border: 2px solid #f6ecdd;
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #f6ecdd;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.checkbox li{
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+

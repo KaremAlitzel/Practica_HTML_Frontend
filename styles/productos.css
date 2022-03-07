@@ -1,0 +1,28 @@
+.productos {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productos li{
+    width: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+.productos li:hover {
+    transform: scale(1.1);
+    box-shadow: 16px 19px 33px 0px rgba(0,0,0,0.2);
+  }
